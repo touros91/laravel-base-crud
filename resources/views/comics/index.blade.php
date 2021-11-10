@@ -15,7 +15,7 @@
         <div class="comics">
             @foreach ($comics as $comic)
             <div class="single-comic">
-                <a href="#">
+                <a href="{{route("comics.show", $comic["id"])}}">
                     <div class="image">
                         <img src="{{$comic["thumb"]}}" alt="">
                     </div>

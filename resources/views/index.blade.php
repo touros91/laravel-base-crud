@@ -1,5 +1,5 @@
 @extends('layout.base')
 
 @section('pageContent')
-    <h2>Tutti i fumetti</h2>
+    <h1>Welcome to DC Comics Website</h1>
 @endsection

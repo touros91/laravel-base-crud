@@ -7,9 +7,6 @@
     <title>DC Comics</title>
 </head>
 <body>
-    <header>Fumetti</header>
-    <main>
-        @yield('pageContent')
-    </main>
+    @yield('pageContent') 
 </body>
 </html>
