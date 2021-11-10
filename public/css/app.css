@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;
+
+700&display=swap);* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header .blue-line {
+  height: 20px;
+  width: 100%;
+  background-color: #0282F9;
+  padding: 4px;
+  margin-bottom: 20px;
+}
+
+header .blue-line .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .blue-line .container div {
+  color: white;
+  font-size: 10px;
+  margin-left: 20px;
+  display: flex;
+}
+
+header .blue-line .container div .additional {
+  margin-left: 3px;
+}
+
+header .blue-line .container sup {
+  font-size: 7px;
+  padding-right: 3px;
+}
+
+header .blue-line a {
+  text-decoration: none;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .container .logo {
+  max-width: 80px;
+}
+
+header .container .logo img {
+  width: 100%;
+}
+
+header .container nav {
+  align-self: center;
+  display: flex;
+}
+
+header .container nav ul {
+  list-style: none;
+}
+
+header .container nav ul li {
+  display: inline-block;
+  margin-left: 18px;
+}
+
+header .container nav ul li a {
+  text-decoration: none;
+  color: #4F4948;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+header .container nav ul li a:hover {
+  color: #0282F9;
+  border-bottom: 5px solid #0282F9;
+  padding-bottom: 50px;
+}
+
+header .container nav ul li a.active {
+  color: #0282F9;
+  border-bottom: 5px solid #0282F9;
+  padding-bottom: 50px;
+}
+
+header .container nav ul li a:last-child i {
+  color: #0282F9;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+header .container nav .search-bar {
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+
+header .container nav .search-bar input {
+  border: none;
+  border-bottom: 3px solid #0282F9;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  margin-left: 50px;
+  text-align: end;
+  outline: none;
+}
+
+header .container nav .search-bar input::-moz-placeholder {
+  color: #4F4948;
+  font-weight: bold;
+}
+
+header .container nav .search-bar input:-ms-input-placeholder {
+  color: #4F4948;
+  font-weight: bold;
+}
+
+header .container nav .search-bar input::placeholder {
+  color: #4F4948;
+  font-weight: bold;
+}
+
+header .container nav .search-bar i {
+  color: #4F4948;
+  position: absolute;
+  right: 0px;
+  bottom: 7px;
+}
+
+main {
+  background-color: #1C1C1C;
+  padding: 20px;
+}
+
+main .comics {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 15px 0 40px 0;
+}
+
+main .comics a {
+  text-decoration: none;
+}
+
+main .comics .single-comic {
+  width: calc(16.6666666667% - 20px);
+  margin: 20px 10px;
+}
+
+main .comics .single-comic .image {
+  width: 140px;
+  height: 140px;
+}
+
+main .comics .single-comic .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0px 0px;
+     object-position: 0px 0px;
+}
+
+main .comics .single-comic h4 {
+  color: #F4F2E7;
+  font-size: 14px;
+  margin-top: 10px;
+  width: 140px;
+}
+

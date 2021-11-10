@@ -1,0 +1,98 @@
+header {
+    margin-bottom: 20px;
+    .blue-line {
+        height: 20px;
+        width: 100%;
+        background-color: $mainColor;
+        padding: 4px;
+        margin-bottom: 20px;
+        .container {
+            display: flex;
+            justify-content: flex-end;
+            div {
+                color: $secondColor;
+                font-size: 10px;
+                margin-left: 20px;
+                display: flex;
+                .additional {
+                    margin-left: 3px;
+                }
+            }
+            sup {
+                font-size: 7px;
+                padding-right: 3px;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: $secondColor;
+        }
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .logo {
+            max-width: 80px;
+            img {
+                width: 100%;
+            }
+        }
+        nav {
+            align-self: center;
+            display: flex;
+            ul {
+                list-style: none;
+                li {
+                    display: inline-block;
+                    margin-left: 18px;
+                    a {
+                        text-decoration: none;
+                        color: $thirdColor;
+                        font-weight: bold;
+                        font-size: 15px;
+                        &:hover {
+                            color: $mainColor;
+                            border-bottom: 5px solid $mainColor;
+                            padding-bottom: 50px;
+                        }
+                        &.active {
+                            color: $mainColor;
+                            border-bottom: 5px solid $mainColor;
+                            padding-bottom: 50px;
+                        }
+                        &:last-child i {
+                            color: $mainColor;
+                            font-size: 13px;
+                            margin-left: 5px;
+                        }
+                    }
+                    
+                }
+            }
+            .search-bar {
+                display: flex;
+                justify-content: end;
+                position: relative;
+                input {
+                    border: none;
+                    border-bottom: 3px solid $mainColor;
+                    padding-bottom: 5px;
+                    padding-right: 15px;
+                    margin-left: 50px;
+                    text-align: end;
+                    outline: none;
+                    &::placeholder{
+                        color: $thirdColor;
+                        font-weight: bold;
+                    }
+                }
+                i{
+                    color: $thirdColor;
+                    position: absolute;
+                    right: 0px;
+                    bottom: 7px;
+                }
+            }
+        }  
+    }
+}
