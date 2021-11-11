@@ -1,31 +1,24 @@
 <header>
-    <div class="blue-line">
-        <div class="container">
-            <div class="dc-power">DC POWER<sup>SM</sup> VISA ®</div>
-            <div><a href="#">ADDITIONAL DC SITES <i class="additional fas fa-caret-down"></i></a></div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="logo">
-            <img src="{{asset('images/dc-logo.png')}}" alt="DC Comics Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">CHARACTERS</a></li>
-                <li><a href="#" class="active">COMICS</a></li>
-                <li><a href="#">MOVIES</a></li>
-                <li><a href="#">TV</a></li>
-                <li><a href="#">GAMES</a></li>
-                <li><a href="#">COLLECTIBLES</a></li>
-                <li><a href="#">VIDEOS</a></li>
-                <li><a href="#">FANS</a></li>
-                <li><a href="#">NEWS</a></li>
-                <li><a href="#">SHOP <i class="fas fa-caret-down"></i></a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+        <div class="container-fluid">
+          <h3 class="mr-3">DC Comics</h3> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{{ route('comics.index')}}">Tutti i fumetti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{{ route('comics.create')}}">Crea un nuovo fumetto</a>
+              </li>
             </ul>
-            <div class="search-bar">
-                <input type="search" placeholder="Search   ">
-                <i class="fas fa-search"></i>
-            </div>
-        </nav>
-    </div>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 </header>

@@ -1,5 +1,5 @@
 @extends('layout.base')
 
 @section('pageContent')
-    <h1>Welcome to DC Comics Website</h1>
+    <h1>Welcome to DC Comics Backoffice</h1>
 @endsection
