@@ -20,7 +20,7 @@
 	  @foreach ($comics as $comic)
 	  <tr>
 		<th scope="row">{{$comic["id"]}}</th>
-		<td>{{$comic["series"]}}</td>
+		<td>{{$comic["title"]}}</td>
         <td>{{$comic["type"]}}</td>
         <td>{{$comic["sale_date"]}}</td>
         <td>Є {{$comic["price"]}}</td>
