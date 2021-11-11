@@ -2,7 +2,7 @@
 
 @section('pageContent')
 
-<h4>Lista di tutti i prodotti</h4>
+<h4>All Comics</h4>
 <table class="table mt-3">
 	<thead>
 	  <tr>
