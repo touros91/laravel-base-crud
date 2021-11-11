@@ -10,10 +10,10 @@
           <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{ route('comics.index')}}">Tutti i fumetti</a>
+                <a class="nav-link active" aria-current="page" href="{{ route('comics.index')}}">All Comics</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{ route('comics.create')}}">Crea un nuovo fumetto</a>
+                <a class="nav-link active" aria-current="page" href="{{ route('comics.create')}}">New Comic</a>
               </li>
             </ul>
             <form class="d-flex">

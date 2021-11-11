@@ -1,15 +1,15 @@
 @extends('layout.base')
 
 @section('pageContent')
-<h1>Modifica prodotto: {{$comic["title"]}}</h1>
+<h1>Edit Comic: {{$comic["title"]}}</h1>
 
 <form action="{{route("comics.update", $comic["id"])}}" method="POST">
 	@csrf
     @method("PUT")
 
 	<div class="form-group">
-        <label for="title">Titolo</label>
-        <input type="text" class="form-control" name="title" id="title" placeholder="Inserisci il titolo" value="{{old('title') ? old('title') : $comic['title']}}">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" name="title" id="title" placeholder="Insert title" value="{{old('title') ? old('title') : $comic['title']}}">
 
 		@error('title')
 			<div class="alert alert-danger">{{ $message }}</div>
@@ -17,8 +17,8 @@
 	</div>
 
 	<div class="form-group">
-		<label for="description">Descrizione</label>
-        <textarea name="description" class="form-control" id="description" cols="30" rows="10"  placeholder="Inserisci la descrizione">{{old('description') ? old('description') : $comic['description']}}</textarea>
+		<label for="description">Description</label>
+        <textarea name="description" class="form-control" id="description" cols="30" rows="10"  placeholder="Insert description">{{old('description') ? old('description') : $comic['description']}}</textarea>
 
 		@error('description')
 			<div class="alert alert-danger">{{ $message }}</div>
@@ -26,8 +26,8 @@
 	</div>
 
 	<div class="form-group">
-		<label for="thumb">Immagine</label>
-        <input type="text" class="form-control" name="thumb" id="thumb"  placeholder="Inserisci il link dell'immagine" value="{{old('thumb') ? old('thumb') : $comic['thumb']}}">
+		<label for="thumb">Image</label>
+        <input type="text" class="form-control" name="thumb" id="thumb"  placeholder="Insert URL image" value="{{old('thumb') ? old('thumb') : $comic['thumb']}}">
 
 		@error('thumb')
 			<div class="alert alert-danger">{{ $message }}</div>
@@ -35,8 +35,8 @@
 	</div>
 
 	<div class="form-group">
-		<label for="price">Prezzo</label>
-        <input type="text" class="form-control" name="price" id="price"  placeholder="Inserisci il prezzo" value="{{old('price') ? old('price') : $comic['price']}}">
+		<label for="price">Price</label>
+        <input type="text" class="form-control" name="price" id="price"  placeholder="Insert price" value="{{old('price') ? old('price') : $comic['price']}}">
 
 		@error('price')
 			<div class="alert alert-danger">{{ $message }}</div>
@@ -44,8 +44,8 @@
 	</div>
 
 	<div class="form-group">	
-        <label for="series">Titolo della serie</label>
-        <input type="text" class="form-control" name="series" id="series"  placeholder="Inserisci il titolo della serie" value="{{old('series') ? old('series') : $comic['series']}}">
+        <label for="series">Serie Title</label>
+        <input type="text" class="form-control" name="series" id="series"  placeholder="Insert serie" value="{{old('series') ? old('series') : $comic['series']}}">
 	
 		@error('series')
 			<div class="alert alert-danger">{{ $message }}</div>
@@ -53,8 +53,8 @@
 	</div>
 
 	<div class="form-group">
-        <label for="sale_date">Data di uscita</label>
-        <input type="text" class="form-control" name="sale_date" id="sale_date"  placeholder="Inserisci la data di uscita" value="{{old('sale_date') ? old('sale_date') : $comic['sale_date']}}">
+        <label for="sale_date">Sale Date</label>
+        <input type="text" class="form-control" name="sale_date" id="sale_date"  placeholder="Insert sale date" value="{{old('sale_date') ? old('sale_date') : $comic['sale_date']}}">
 	
 		@error('sale_date')
 			<div class="alert alert-danger">{{ $message }}</div>
@@ -62,8 +62,8 @@
 	</div>
 
     <div class="form-group">
-        <label for="type">Tipo</label>
-        <input type="text" class="form-control" name="type" id="type"  placeholder="Inserisci il tipo" value="{{old('type') ? old('type') : $comic['type']}}">
+        <label for="type">Type</label>
+        <input type="text" class="form-control" name="type" id="type"  placeholder="Insert tyoe" value="{{old('type') ? old('type') : $comic['type']}}">
     
 		@error('type')
 			<div class="alert alert-danger">{{ $message }}</div>
