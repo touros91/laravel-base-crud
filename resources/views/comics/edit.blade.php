@@ -70,7 +70,7 @@
 		@enderror
 	</div>
 
-	<button type="submit" class="btn btn-primary">Modifica</button>
+	<button type="submit" class="btn btn-primary">Edit</button>
   </form>
     
 @endsection
