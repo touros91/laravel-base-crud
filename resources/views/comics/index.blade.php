@@ -21,24 +21,14 @@
         <td>{{$comic["sale_date"]}}</td>
 		<td>
 		<a href="{{route("comics.show", $comic["id"])}}"><button type="button" class="btn btn-primary">Visualizza</button></a>
-	  </tr>
+		{{-- <a href="{{route("comics.create", $comic["id"])}}"><button type="button" class="btn btn-primary">Crea</button></a> --}}
+			
+	</tr>
 	  @endforeach
 	</tbody>
 </table>
-{{-- <main>
-    <div class="comics">
-        @foreach ($comics as $comic)
-        <div class="single-comic">
-            <a href="{{route("comics.show", $comic["id"])}}">
-                <div class="image">
-                    <img src="{{$comic["thumb"]}}" alt="">
-                </div>
-                <h4>{{strtoupper($comic["series"])}}</h4>
-            </a>
-        </div>
-        @endforeach
-    </div>
-</main>  --}}
+	<a href="{{route("comics.create", $comic["id"])}}"><button type="button" class="btn btn-primary">Crea</button></a>
+
 
 @endsection
     
