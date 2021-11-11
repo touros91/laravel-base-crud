@@ -9,7 +9,9 @@
 		<th scope="col">#</th>
 		<th scope="col">Titolo</th>
 		<th scope="col">Tipo</th>
-		<th scope="col">Data uscita</th>
+		<th scope="col">Data di uscita</th>
+		<th scope="col">Prezzo</th>
+		<th scope="col"></th>
 	  </tr>
 	</thead>
 	<tbody>
@@ -19,10 +21,10 @@
 		<td>{{$comic["series"]}}</td>
         <td>{{$comic["type"]}}</td>
         <td>{{$comic["sale_date"]}}</td>
+        <td>{{$comic["price"]}}</td>
 		<td>
-		<a href="{{route("comics.show", $comic["id"])}}"><button type="button" class="btn btn-primary">Visualizza</button></a>
-		{{-- <a href="{{route("comics.create", $comic["id"])}}"><button type="button" class="btn btn-primary">Crea</button></a> --}}
-			
+			<a href="{{route("comics.show", $comic["id"])}}"><button type="button" class="btn btn-primary">Visualizza</button></a>
+		</td>
 	</tr>
 	  @endforeach
 	</tbody>

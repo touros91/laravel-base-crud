@@ -1,7 +1,9 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
         <div class="container-fluid">
-          <h3 class="mr-3">DC Comics</h3> 
+          <h3 class="mr-3">
+           <a class="nav-link" href="/">DC Comics</a>
+          </h3> 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
